@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw video!</title>
+    <style>
+        .booth {
+            position: relative;
+            border: 3px solid rgb(141, 151, 151);
+            width: 512px;
+            height: 542px;
+            left: 35%;
+            top: 40px;
+        }
+        .button {
+            position: relative;
+            border: 3px solid rgb(141, 151, 151);
+            text-align: center;
+            background-color: rgb(141, 151, 151);
+            color: white;
+            left: 35%;
+            width: 512px;
+        }
+    </style>
+</head>
+<body>
+    <div class="booth">
+        <canvas id="viewport" width="512" height="542"></canvas>
+    </div>
+    <div class="button">
+        Canvas 👻: Please show your face! <br>
+        <button id="button" onclick="onclickToReder()">Play</button>
+    </div>
+    <script src="opencv.js"></script>
+    <script src="video.js"></script>
+</body>
+</html>
